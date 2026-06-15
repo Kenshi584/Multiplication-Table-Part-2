@@ -1,0 +1,85 @@
+/*
+File: main.css
+GUI Assignment: We are assigned to created a multiplcation table using HTML, CSS, JavaScript, and JQuery. This file contains the decoration of the website
+Derek Garcia, UMass Lowell Computer Science, Derek_GarciaRodriguez@student.uml.edu
+Copyright (c) 2026 by Derek. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+updated by DG on June 15, 2026 at 6:01 PM*/
+
+/*Entire Website*/
+body{
+    background-color: bisque;
+}
+
+/*The box around the inputs*/
+.input {
+    display: block;
+    margin-top: 40px;
+    float: left;
+    border: 1px solid black;
+    padding: 6px;
+}
+.input label{
+    display: block;
+}
+
+/*Multiplication Table*/
+#table_con {
+    max-width: 100%;
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 30px;
+    clear: both;
+}
+
+table {
+    border-collapse: collapse;    
+}
+/*Tab Section*/
+.tab-table-container {
+    max-width: 100%;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.tab-table-container table {
+    border-collapse: collapse;
+    width: max-content;
+}
+
+#tabs .ui-tabs-panel {
+    overflow: auto;
+}
+/*Rows and Columns of the Multiplcation Table8*/
+th, td {
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:first-child th {
+    background-color: aqua;
+}
+
+tr th:first-child {
+    background-color: aqua;
+}
+
+tr:nth-child(even) td {
+    background-color: orange;
+}
+tr:nth-child(odd) td {
+    background-color: white;
+}
+
+/*x icon for tabs*/
+.ui-icon-close {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+
+
+
+/*Source for the icon image: https://iconscout.com/icons/multiplication-tables */

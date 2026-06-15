@@ -1,0 +1,63 @@
+<!--
+File: index.html
+GUI Assignment: We are assigned to created a multiplcation table using HTML, CSS, JavaScript, and JQuery. 
+Derek Garcia, UMass Lowell Computer Science, Derek_GarciaRodriguez@student.uml.edu
+Copyright (c) 2026 by Derek. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+updated by DG on June 15, 2026 at 6:01 PM
+-->
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Derek Garcia">
+    <meta
+      name="description"
+      content="This page contains all the things I am learning how to
+    create as I learn HTML."
+    >
+    <title>Multiplication Table</title>
+    <link rel="icon" href="times.webp" type="img/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  </head>
+  <body>
+    <!--Collects User Inputs-->
+    <h1>Multiplication Table Generator</h1>
+    <!--Content-->
+    <div id="tabs">
+      <ul>
+        <li><a href="#input-tab">Input</a></li>
+      </ul>
+      <div id="input-tab">
+        <form id="Table">
+        <div class ="input">
+        <label for="min_col">Minimum Column Value:</label>
+        <input type="number" id="min_col" name="min_col" class="num_in">
+        <div id="min_col_slide"></div>
+
+        <label for="max_col">Maximum Column Value:</label>
+        <input type="number" id="max_col" name="max_col" class="num_in">
+        <div id="max_col_slide"></div>
+
+        <label for="min_row">Minimum Row Value:</label>
+        <input type="number" id="min_row" name="min_row" class="num_in">
+        <div id="min_row_slide"></div>
+
+        <label for="max_row">Maximum Row Value:</label>
+        <input type="number" id="max_row" name="max_row" class="num_in">
+        <div id="max_row_slide"></div>
+
+        <button type="submit">Generate Table</button>
+        <button type="button" id="delete-selected">Delete Selected Tabs</button>
+        </div>
+    </form>
+      </div>
+    </div>
+    <div id="error"></div>
+    <div id="table_con"></div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+      <script src="script.js"></script>
+  </body>
+</html>
